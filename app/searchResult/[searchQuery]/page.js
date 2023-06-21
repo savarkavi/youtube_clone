@@ -1,12 +1,12 @@
 "use client";
 
+import VideoCard from "@/components/VideoCard";
+import Loader from "@/components/Loader";
 import { context } from "@/context/context";
 import { useContext } from "react";
-import Loader from "@/components/Loader";
-import VideoCard from "@/components/VideoCard";
 import LeftNav from "@/components/LeftNav";
 
-export default function Home() {
+const searchResult = () => {
   const { loading } = useContext(context);
 
   return (
@@ -25,4 +25,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default searchResult;
